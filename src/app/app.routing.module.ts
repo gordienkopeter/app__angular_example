@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
-import {BlankComponent} from './layouts/blank/blank.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 
@@ -14,19 +13,27 @@ import {RegisterComponent} from './register/register.component';
           pathMatch: 'full'
         },
         {
-          path: '',
-          component: BlankComponent,
-          children: [
-            {
-              path: 'login',
-              component: LoginComponent
-            },
-            {
-              path: 'register',
-              component: RegisterComponent
-            },
-          ]
-        }
+          path: 'login',
+          component: LoginComponent
+        },
+        {
+          path: 'register',
+          component: RegisterComponent
+        },
+        // {
+        //   path: '',
+        //   component: BlankComponent,
+        //   children: [
+        //     {
+        //       path: 'login',
+        //       component: LoginComponent
+        //     },
+        //     {
+        //       path: 'register',
+        //       component: RegisterComponent
+        //     },
+        //   ]
+        // }
       ]
     )
   ],

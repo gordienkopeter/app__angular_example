@@ -5,7 +5,6 @@ import {AppComponent} from './app.component';
 import {LoginComponent} from './login/login.component';
 import {AppRoutingModule} from './app.routing.module';
 import {SharedModule} from './common/shared.module';
-import {BlankComponent} from './layouts/blank/blank.component';
 import {RegisterComponent} from './register/register.component';
 import {DashboardComponent} from './layouts/dashboard/dashboard.component';
 
@@ -14,7 +13,6 @@ import {DashboardComponent} from './layouts/dashboard/dashboard.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    BlankComponent,
     RegisterComponent,
     DashboardComponent
   ],
